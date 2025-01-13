@@ -1,11 +1,16 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/shu-u
+      url-base: https://github.com/petejohanson
+    - name: kumamuk-git
+    url-base: https://github.com/inorichi
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: feature-test
+      revision: main
       import: app/west.yml
+    - name: zmk-pmw3610-driver
+      remote: inorichi
+      revision: main
   self:
     path: config
