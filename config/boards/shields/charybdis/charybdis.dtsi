@@ -3,6 +3,7 @@
 
 / {
     chosen {
+		kscan = <&kscan0>;
 		zmk,physical_layout = &physical_layout0;
     };
 
@@ -10,8 +11,7 @@
         compatible = "zmk,physical-layout";
         display-name = "default_transform";
 
-        kscan = <&kscan0>;
-        transform = <&keymap_transform_0>;
+        transform = <&default_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>
