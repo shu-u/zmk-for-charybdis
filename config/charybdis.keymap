@@ -96,8 +96,6 @@
                            &trans     &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
                                       &trans     &trans       &trans
             >;
-
-            trackball-bindings = <&tmv_fine>;//精准指针层
         };
     };
 };
