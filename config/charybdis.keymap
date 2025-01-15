@@ -41,8 +41,6 @@
                                   &lt 4 GRAVE  &lt 3 SPACE       &kp LEFT_WIN         &kp BACKSPACE  &kp ENTER
                                                &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp DELETE
             >;
-
-            trackball-bindings = <&tmv_coarse>;
         };
 
         layer_1 {
