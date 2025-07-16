@@ -23,11 +23,11 @@
     input-processors = <&zip_xy_scaler 5 5>;
 
     /* auto mouse layer setting (mouse layer = 3, active time(ms) = 2000)*/
-    input-processors = <&zip_temp_layer 2 2000>;
+    input-processors = <&zip_temp_layer 3 2000>;
 
     /* layer-4 scroll override */
     scroller: scroller {
-        layers           = <3>;
+        layers           = <4>;
         input-processors = <
             &zip_xy_scaler 1 15                              // Scales the scroll speed
             &zip_xy_to_scroll_mapper                         // Converts XY movement to scroll events
