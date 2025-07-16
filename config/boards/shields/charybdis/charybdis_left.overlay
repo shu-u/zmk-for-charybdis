@@ -6,11 +6,11 @@
 
 #include "charybdis.dtsi"
 
-/ {
-    chosen {
-        zmk,kscan = &kscan0;
-    };
-};
+// / {
+//     chosen {
+//         zmk,kscan = &kscan0;
+//     };
+// };
 
 /* charybdis v1
 &kscan0 {
