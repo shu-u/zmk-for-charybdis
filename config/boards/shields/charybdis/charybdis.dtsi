@@ -89,6 +89,7 @@
     };
 	
     kscan0: kscan {
+        wakeup-source;
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
 
@@ -109,9 +110,4 @@
 	        , <&gpio1 6 GPIO_ACTIVE_HIGH>
             ;
     };
-
-	trackballs {
-		compatible = "zmk,keymap-trackballs";
-		trackballs = <&trackball>;
-	};
 };
