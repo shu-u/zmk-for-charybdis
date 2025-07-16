@@ -9,6 +9,11 @@
     quick-tap-ms = <150>;
 };
 
+/* extend auto mouse layer duration, when mkp(mouse keys) is pressed */
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer 3 2000>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";

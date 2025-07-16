@@ -1,13 +1,33 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
+&zip_temp_layer {
+    /* immidiately return from auto mouse layer, if any key excluding below is pressed*/
+    excluded-positions = <
+        30
+        42
+        43
+        44
+        45
+        46
+    >;
+};
+
+&zip_temp_layer {
+    /* prevent to invoke auto mouse layer for {200ms} after any key press */
+    require-prior-idle-ms = <200>;
+};
+
 &trackball_listener {
     /* base processor chain on all layers */
     input-processors = <&zip_xy_scaler 5 5>;
 
-    /* layer-8 scroll override */
+    /* auto mouse layer setting (mouse layer = 3, active time(ms) = 2000)*/
+    input-processors = <&zip_temp_layer 3 2000>;
+
+    /* layer-4 scroll override */
     scroller: scroller {
-        layers           = <7>;
+        layers           = <3>;
         input-processors = <
             &zip_xy_scaler 1 15                              // Scales the scroll speed
             &zip_xy_to_scroll_mapper                         // Converts XY movement to scroll events
