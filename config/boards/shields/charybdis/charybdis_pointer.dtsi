@@ -22,8 +22,8 @@
     /* base processor chain on all layers */
     input-processors = <&zip_xy_scaler 5 5>;
 
-    /* auto mouse layer setting (mouse layer = 3, active time(ms) = 2000)*/
-    input-processors = <&zip_temp_layer 3 2000>;
+    /* auto mouse layer setting (mouse layer = 3, active time(ms) = 700)*/
+    input-processors = <&zip_temp_layer 3 700>;
 
     /* layer-4 scroll override */
     scroller: scroller {
