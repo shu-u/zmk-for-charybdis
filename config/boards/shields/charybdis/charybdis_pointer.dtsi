@@ -18,9 +18,9 @@
         33
 
         //home and end
-        51
-        52
-        55
+        //51
+        //52
+        //55
     >;
 };
 
@@ -33,8 +33,8 @@
     /* base processor chain on all layers */
     input-processors = <&zip_xy_scaler 5 5>;
 
-    /* auto mouse layer setting (mouse layer = 3, active time(ms) = 700)*/
-    input-processors = <&zip_temp_layer 3 700>;
+    /* auto mouse layer setting (mouse layer = 3, active time(ms) = 650)*/
+    input-processors = <&zip_temp_layer 3 650>;
 
     /* layer-4 scroll override */
     scroller: scroller {
